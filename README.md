@@ -16,3 +16,13 @@ Slowly I was able to create tiny contracts and was able to initiate the payments
 
 I have used the Rinkbey test ethereum network for the sake of real transactions and catching the records for the same.
 Also the main reason to use Rinkbey Test Network was the test ethers were eaisly accessible.
+
+
+First of all you need to set up an MetaMask Wallet and activate your TestCoin Network if you want to test this Code.
+You can receive the Test Ethers from the testcoin providers. For Eg: 
+
+Have a look on my RentalLeaseAgreement.sol file where I have created the code for smart-contract that has the functions for:-
+i) Deploying the rent agreement through connecting your MetaMask Wallet.
+ii) Confirming the Agreement from the Tennant Side.
+iii) Triggering the payments.
+iv) Terminating the agreement.
