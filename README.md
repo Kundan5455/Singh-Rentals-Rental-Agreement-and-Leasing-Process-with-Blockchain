@@ -19,7 +19,9 @@ Also the main reason to use Rinkbey Test Network was the test ethers were eaisly
 
 
 First of all you need to set up an MetaMask Wallet and activate your TestCoin Network if you want to test this Code.
-You can receive the Test Ethers from the testcoin providers. For Eg: 
+You can receive the Test Ethers from the testcoin providers. For Eg: I used https://faucets.chain.link/  to receive testcoins for Rinkbey Test Network.
+Step 1 --> Connect it with your wallet address.
+Step 2 --> 
 
 Have a look on my RentalLeaseAgreement.sol file where I have created the code for smart-contract that has the functions for:-
 i) Deploying the rent agreement through connecting your MetaMask Wallet.
