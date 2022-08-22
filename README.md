@@ -26,20 +26,32 @@ iii) --> If you want to can track the order by the link provided for the EtherSc
 
 
 Step 2 -----> Then we need to deploy our contract on the REMIX-IDE a solidity based platform provided by Ethereum Network Itself. And the most amazing ting about using this IDE is that you don't need to download any kind of setup file or software for this this platrform is comnpletely free and secure to use in online mode.
+
 i) --> Visit https://remix.ethereum.org/ this link to start with your solidity code.
+
 ii) --> Create a New contract in the folder contracts you find in the left sided dropdown menu name it according to your convenience and give it an extension as .sol.
+
 iii) --> Copy the provided code in RentalLeaseAgreement.sol file or directly copy the whole file and past it in the file you have created in the contracts folder.
+
 iv) --> Go to The Solidity Compiler window and select the pragma solidity version as mentioned in the code and Compile your code to check if there is any kind of problem running through your code.
+
 v) --> Then jump to the Deploy and Run transaction Window below the Compile window and paste your wallet addres in the Add Address box and deploy your project.
+
 vi) --> Now you can check in your MetaMask Wallet that the project is been deployed.
+
 vii) --> You can save all the transaction scenarios in .json format from the Transactions Recorded window.
+
 viii) --> Down in the Deployed contracts window you can see your contract functions.
 
 
 Step 3 -----> Have a look on my RentalLeaseAgreement.sol file where I have created the code for smart-contract that has the functions for:-
+
 i) Confirming the Agreement from the Tennant Side.
+
 ii) Triggering the payments.
+
 iii) Terminating the agreement.
+
 
 Step 4 -----> Triggering tghese functions from your Remix IDE will throw you an notification in your MetaMask wallet to confirm the payment request. As soon as you confirm the payment the amount is deducted from your wallet and is been credited to beneficiary's wallet.
 
