@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/govLogin.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Anaheim|Abel" rel="stylesheet">
+
+    <!-- W3 school CSS Effects -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>Landlord History</title>
+
+</head>
+
+<body>
+
+    <div id="ytWidget" align="right"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=en&widgetTheme=dark&autoMode=false" type="text/javascript"></script>
+
+    <div class="container" align="center">
+
+      <img class="icon" src="extra/icon.png" align="center">
+
+      <h1 class="heading w3-animate-opacity"><b>Interface for Landlords</b></h1>
+
+      <h2 class="heading2 w3-animate-opacity">Past Contract Status Dashboard</h2>
+
+      <br>
+
+  </div>
+
+  <div class="container-fluid explain">
+
+   <div style="margin-left: 1rem; margin-right: 1rem;">
+
+    <br>
+    <br>
+
+    <h1 class="heading3" style="color: white"><b> Landlord Profile Information </b></h1>
+    <br>
+    <br>
+
+    <p class="textPara">
+
+        <b> Legal Name - </b> <span class="textPara" id="nameUser"></span>
+        <br>
+        <br>
+        <b> Registered Email - </b> <span class="textPara" id="emailUser"></span>
+        <br>
+        <br>
+       
+        <br>
+        <br>
+        <br>
+    </p>
+
+</div>
+
+</div>
+
+<div class="userForm" align="center">
+
+    <br>
+    <br>
+
+    <h1 class="heading3"><b>Past Contracts on Rentals</b></h1>
+    <br>
+    <br>
+
+    <div class="alert alert-success message"><b>Landlords can view all the past contracts deployed on Rentals below, both Tenant and Landlord Approval will be required to Deactivate the Contract before the stated deadline, Security Deposit will be released back to the Tenant after necessary deduction, as soon as the Contract is Deactivated.</b></div>
+    <br>
+
+    <button type="button" id="showButton" class="getStarted">Show Contracts</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="alert alert-info message" id="contractMessage" style="font-weight: bold; display: none"></div>
+    <br>
+    <br>
+</div>
+
+<div class="userForm" id="allContracts" style="margin: 6%; display: none;">
+
+<hr>
+
+</div>
+
+<script src="https://apis.mapmyindia.com/advancedmaps/v1/6ayfijdpmpjdsz6ye2nw1yc5et4vu4hd/map_load?v=01."></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="javascript/common.js"></script>
+<script src="javascript/landlordPast.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/registerFull.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Anaheim|Abel" rel="stylesheet">
+
+    <!-- W3 school CSS Effects -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>Deploy Contract</title>
+
+</head>
+
+<body>
+
+    <div id="ytWidget" align="right"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=en&widgetTheme=dark&autoMode=false" type="text/javascript"></script>
+
+    <div class="container" align="center">
+
+      <img class="icon" src="extra/icon.png" align="center">
+
+      <h1 class="heading w3-animate-opacity"><b>Rentals for Landlords</b></h1>
+
+      <h2 class="heading2 w3-animate-opacity">Contract Deployment Dashboard</h2>
+      <br>
+
+  </div>
+
+  <div class="container-fluid explain">
+
+     <div style="margin-left: 1rem; margin-right: 1rem;">
+
+        <br>
+        <br>
+
+        <h1 class="heading3" style="color: white"><b>Read This <span class="text-muted">(Important)</span></b></h1>
+
+        <br>
+
+        <p class="textPara">
+
+            - Landlords are the parties responsible for drafting the Contract, they enter the details of contract as discussed with the Tenants and follow guidelines defined by the government.
+
+            <br>
+            <br>
+
+            - The contracts have details like Ethereum Address of the Tenant, Address of the Property, Duration, Rent, Security Deposits and Other Terms of Agreement. 
+
+            <br>
+            <br>
+
+            <b>- Landlords have to pay the Registration Fee defined by Government at the time of drafting the contract, it will be refuded back if the Contract is rejected by either the Tenant or the Government.</b>
+
+            <br>
+            <br>
+
+            <b>- After the deployment of contract, the tenants will verify and approve the Contract, they are also required to pay the Security Deposit at the same step which will be held in an Escrow Account and released only when both parties give their approval.</b>
+
+            <br>
+            <br>
+
+            - After the Tenant's Approval, third step would be Government's Verification of the Contract, with the completion of this step the contract will become Active and deployed on the Blockchain.
+
+            <br>
+            <br>
+            
+            <b><div align="center" class="textPara">START DRAFTING THE CONTRACT BELOW</b></div>
+            <br>
+            <br>
+            <br>
+        </p>
+
+    </div>
+
+</div>
+
+<div class="userForm" align="center">
+
+    <br>
+    <br>
+    <br>
+
+    <h1 class="heading3"><b>Step - I</b></h1>
+    <h1 class="heading3">Tenant's Information</h1>
+    <br>
+    <br>
+
+    <div class="alert alert-dark message"><b>Transaction on EtherScan - <a href="https://rinkeby.etherscan.io/"> Click Here</b></a></div>
+    <br>
+    <div class="alert alert-danger message" id="message1" style="font-weight: bold; display: none;"></div> 
+    <br>
+    <img src="extra/loader.gif" id="loader1" class="loader">
+    <br>
+
+    <form style="margin-left: 1rem">
+
+        <input class="formInput form-control" type="text" id="tenantAdd" placeholder="Tenant's Ethereum Address" required>
+        <br>
+        <button type="button" id="registerButton1" class="getStarted">Submit</button>
+
+    </form>
+
+    <br>
+    <br>
+
+</div>
+
+<hr>
+<!------>
+
+<div class="userForm" align="center">
+
+    <br>
+    <br>
+    <br>
+
+    <h1 class="heading3"><b>Step - II</b></h1>
+    <h1 class="heading3">Property's Information</h1>
+    <br>
+    <br>
+
+    <div class="alert alert-dark message"><b>Transaction on EtherScan - <a href="https://rinkeby.etherscan.io/">Click Here</b></a></div>
+    <br>
+    <div class="alert alert-danger message" id="message2" style="font-weight: bold; display: none;"></div> 
+    <br>
+    <img src="extra/loader.gif" id="loader2" class="loader">
+    <br>
+
+    <form style="margin-left: 1rem;">
+
+        <textarea class="formInput form-control" type="text" id="address" rows="5" placeholder="Complete Address of the Property" required></textarea>
+        <br>
+        <select class="formInput" name="Property Type" id="type">
+        <option value="Residential">Residential Property</option>
+        <option value="Commercial">Commercial Property</option>
+        <option value="Others">Others</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <p class="textPara" style="color: #263854; font-weight: bold">Start Date of the Contract</p>
+        <div class="alert alert-warning message" style="font-weight: bold; width: 75%">Kindly ensure that your Contract's Start Date is atleast 7 Days
+        from Today, as Government Verification of Contract is also required after the Deployment</div> 
+        <br>
+        <input class="formInput form-control" type="date" id="startDate" required>
+        <br>
+        <br>
+
+        <p class="textPara" style="color: #263854; font-weight: bold">End Date of the Contract</p>
+        <div class="alert alert-info message" style="font-weight: bold; width: 75%">Minimum Duration of Agreement is 1 Month and Maximum Duration of Agreement is 240 Months (20 Years)</div> 
+        <div class="alert alert-warning message" style="font-weight: bold; width: 75%">Months are assumed of 30 days, Example - If Contract is drafted for 1 Months and 8 Days, system would take it as 2 Months <br>(Rounded Off to the Nearest Month)</div> 
+        <br>
+        <input class="formInput form-control" type="date" id="endDate" required>
+        <br>
+        <br>
+        <input class="formInput form-control" type="number" id="rent" placeholder="Monthly Rent (> 0 and in ₹)" required>
+        <input class="formInput form-control" type="number" id="security" placeholder="Security Deposit (0 if N/A, in ₹)" required>
+        <br>
+        <button type="button" id="registerButton2" class="getStarted">Submit</button>
+
+    </form>
+
+    <br>
+    <br>
+
+</div>
+
+<hr>
+<!------>
+
+<div class="userForm" align="center">
+
+    <br>
+    <br>
+    <br>
+
+    <h1 class="heading3"><b>Step - III</b></h1>
+    <h1 class="heading3">Miscellaneous Information</h1>
+    <br> 
+    <br>
+
+    
+    <div class="alert alert-warning message"><b>Upload your Physical Contracts here, so that this contract can be a Valid Document Proof for the Governments, Contracts will be Publicly Visible</b></div>
+    <br>
+    <br>
+
+    <div class="alert alert-dark message"><b>Transaction on EtherScan - <a href="https://rinkeby.etherscan.io/"> Click Here</b></a></div>
+    <br>
+    <div class="alert alert-danger message" id="message3" style="font-weight: bold; display: none;"></div> 
+    <br>
+    <img src="extra/loader.gif" id="loader3" class="loader">
+    <br>
+
+    <form style="margin-left: 1rem">
+
+        <br>
+        <input class="formInput form-control" type="number" id="sqFt" placeholder="Square Footage of Property" required>
+        <input class="formInput form-control" type="number" id="rooms" placeholder="Number of Rooms (0 if N/A)" required>
+        <br>
+        <textarea class="formInput form-control" type="text" id="extra" placeholder="Other Terms of Contract, like (Maintenance Fees, Electricity, Insurance, Utilities, Repairs etc)" required rows="8"></textarea>
+        <br>
+        <br>
+
+        <br>
+        <div class="input-group mb-3" style="width: 80%; text-align: left; font-size: 1.2rem">
+        <div class="custom-file">
+        <input type="file" class="custom-file-input " id="inputGroupFile02" required>
+        </div>
+        </div>
+
+        <br>
+        <button type="button" id="registerButton3" class="getStarted">Submit</button>
+
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+
+
+<hr>
+<!------>
+
+<div class="userForm" align="center">
+
+    <br>
+    <br>
+    <br>
+
+    <h1 class="heading3"><b>Step - IV</b></h1>
+    <h1 class="heading3">Registration Fee Payment</h1>
+    <br>
+    <br>
+
+    <div class="alert alert-dark message">Transaction on EtherScan - <a href="https://rinkeby.etherscan.io/"><b> Click Here</b></a></div>
+    <br>
+    <div class="alert alert-danger message" id="message4" style="font-weight: bold; display: none;"></div> 
+    <br>
+    <img src="extra/loader.gif" id="loader4" class="loader">
+    <br>
+    <div class="alert alert-success message"><b>Please make sure you have sufficient Ether Balance in your MetaMask Wallet</b></div>
+    <div class="alert alert-warning message" id="showFee" style="font-weight: bold">Fee to be paid (First Complete above Steps)</div>
+    <br>
+
+    <form style="margin-left: 1rem">    
+
+        <button type="button" id="contractSign" class="getStarted">Sign the Contract</button>
+         <br>
+        <button type="button" id="registerButton4" class="getStarted">Pay Stamp Duty Fee</button>
+
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="javascript/common.js"></script>
+<script src="javascript/registerFull.js"></script>
+
+</body>
+</html>
